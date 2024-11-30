@@ -18,7 +18,7 @@ extract_color: True
 filter_invalid_frame: True
 
 comple_nonvis: True
-query_frame_num: 3
+query_frame_num: 1
 robust_refine: 2
 BA_iters: 1
 
@@ -33,18 +33,18 @@ gr_visualize: False
 fmat_thres: 4.0
 max_reproj_error: 4.0
 init_max_reproj_error: 4.0
-max_query_pts: 2048
+max_query_pts: 1024
 
-dense_depth: False
+dense_depth: True
 
 avg_pose: True
 shared_camera: False
 
 save_to_disk: True
-SCENE_DIR: examples/kitchen
+SCENE_DIR: /home/shaol/xzhixuan/projects/xarm6/data/a_black_box
 
 resume_ckpt:  ckpt/vggsfm_v2_0_0.bin
-auto_download_ckpt: True
+auto_download_ckpt: False
 
 query_method: "aliked"
 
@@ -56,7 +56,7 @@ make_reproj_video: False
 
 visual_tracks: False
 visual_query_points: False
-visual_dense_point_cloud: False
+visual_dense_point_cloud: True
 
 
 query_by_midpoint: False

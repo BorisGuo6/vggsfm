@@ -20,7 +20,7 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/facebookresearch/vggsfm.git",
     packages=find_packages(),
-    python_requires=">=3.10",
+    # python_requires=">=3.10",
     package_data={"vggsfm": ["cfgs/*.yaml"]},
     entry_points={"console_scripts": ["vggsfm-demo=vggsfm_demo:demo_fn"]},
 )
